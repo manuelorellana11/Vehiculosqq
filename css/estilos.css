@@ -1,0 +1,301 @@
+/* General Body and HTML styling */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    background: linear-gradient(to bottom right, #e0f2f7, #bbdefb, #90CAF9); /* Light blue to a slightly darker blue */
+}
+
+/* Header Styling */
+.navbar {
+    background-color: #d15700 !important; /* A distinct blue for the navbar, similar to the provided images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2.5rem; /* Larger font size for brand */
+    color: #fff !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: #fff !important;
+    font-size: 1.1rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #cce5ff !important; /* Lighter blue on hover */
+}
+
+/* Main Content Section Background */
+.main-content-gradient {
+    background: linear-gradient(to bottom right, #16afd9, #bbdefb,); /* Light blue to a slightly darker blue */
+    flex-grow: 1; /* Allows content to push footer down */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Hero Section (Homepage specific) */
+.hero-section {
+    position: relative;
+    height: 60vh; /* Adjust height as needed */
+    background-image: url('../img/farmacia_interior.jpg'); /* Placeholder image for pharmacy interior */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 20px; /* Space below hero */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero-content .btn {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background-color: #00aaff; /* Bright blue for button */
+    border-color: #00aaff;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #007bbd; /* Slightly darker blue on hover */
+    border-color: #007bbd;
+}
+
+/* Product Card Styling (common for products page) */
+.product-card {
+    border: none; /* Remove default bootstrap border */
+    border-radius: 15px; /* Rounded corners for cards */
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: #007bff; /* Blue background for product cards */
+    color: #fff;
+}
+
+.product-card:hover {
+    transform: translateY(-8px); /* Lift card slightly on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.product-card .card-img-top {
+    height: 180px; /* Fixed height for product images */
+    object-fit: contain; /* Ensures images fit without cropping */
+    padding: 15px;
+    background-color: #fff; /* White background for the image area */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.product-card .card-body {
+    padding: 15px;
+    background-color: #007bff; /* Match card background */
+}
+
+.product-card .card-title {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+}
+
+.product-card .btn-info {
+    background-color: #00aaff; /* Bright blue for product buttons */
+    border-color: #00aaff;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 25px;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .btn-info:hover {
+    background-color: #007bbd;
+    border-color: #007bbd;
+}
+
+/* Modal Styling */
+.modal-header {
+    background-color: #007bff; /* Blue header for modals */
+    color: #fff;
+    border-bottom: none;
+}
+
+.modal-header .modal-title {
+    font-weight: bold;
+}
+
+.modal-header .btn-close {
+    filter: invert(1); /* Makes the close button white */
+}
+
+.modal-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.modal-product-img {
+    max-width: 80%; /* Adjust size of image in modal */
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #28a745; /* Green for price */
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Services Page Styling */
+.service-card {
+    background-color: #007bff; /* Blue background for service cards */
+    color: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    min-height: 250px; /* Ensure consistent height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.service-card h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.service-card ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.service-card ul li {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.pharmacist-image {
+    max-width: 100%;
+    height: 300px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover the area, possibly cropping */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Contact Page Styling */
+.contact-form-container {
+    background-color: #007bff; /* Blue background for form container */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 600px; /* Max width for the form */
+    margin: 0 auto; /* Center the form */
+    color: #fff;
+}
+
+.contact-form-container label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: block; /* Make label take full width */
+}
+
+.contact-form-container .form-control {
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    background-color: #fff; /* White background for inputs */
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 20px; /* Space between inputs */
+}
+
+.contact-form-container .btn-success {
+    background-color: #28a745; /* Green send button */
+    border-color: #28a745;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    width: 100%; /* Full width button */
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-container .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40; /* Dark gray for footer */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Push footer to the bottom */
+    width: 100%;
+}
+
+footer .iconos i {
+    font-size: 2em;
+    margin: 0 10px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+footer .iconos i:hover {
+    color: #00aaff; /* Bright blue on hover */
+}

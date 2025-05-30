@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+       <header>
+        <nav class="navbar navbar-expand-lg navbar-dark py-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Vehiculos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+       <main class="main-content-gradient">
+        <div class="container py-5">
+            <h2 class="text-center mb-5">Nuestros Productos</h2>
+            <div class="row g-4">
+
+                <div class="col-md-3">
+                    <div class="card text-center product-card">
+                        <img src="img/Hyundai.jpg" class="card-img-top" alt="Analgésico X">
+                        <div class="card-body">
+                            <h5 class="card-title">Hyundai</h5>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalProducto1">Ver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center product-card">
+                        <img src="img/Toyota.jpg" class="card-img-top" alt="Vitamina C">
+                        <div class="card-body">
+                            <h5 class="card-title">Toyota</h5>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalProducto2">Ver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center product-card">
+                        <img src="img/Prado.png" class="card-img-top" alt="Jarabe para la Tos">
+                        <div class="card-body">
+                            <h5 class="card-title">Prado</h5>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalProducto3">Ver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center product-card">
+                        <img src="img/Ford Camioneta.png" class="card-img-top" alt="Crema Hidratante">
+                        <div class="card-body">
+                            <h5 class="card-title">Ford Camioneta</h5>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalProducto4">Ver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center product-card">
+                        <img src="img/Ford.jpg" class="card-img-top" alt="Protector Solar">
+                        <div class="card-body">
+                            <h5 class="card-title">Ford</h5>
+                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalProducto5">Ver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center product-card">
+                        <img src="img/kiv.jpg" class="card-img-top" alt="Kit Primeros Auxilios">
+                        <div class="card-body">
+                            <h5 class="card-title">Kiv</h5>
+                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalProducto6">Ver</button>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="modal fade" id="modalProducto1" tabindex="-1" aria-labelledby="modalProducto1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Hyundai">Hyundai</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Hyundai.jpg" class="img-fluid mb-3 modal-product-img" alt="Analgésico X">
+                    <p class="product-price">Precio: L 100,000.00</p>
+                    <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente recusandae earum enim officiis. Maiores accusantium expedita nesciunt amet aliquid recusandae nam tempora, assumenda excepturi incidunt distinctio porro neque quia quaerat.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProducto2" tabindex="-1" aria-labelledby="modalProducto2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProducto2Label">Toyota</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Toyota.jpg" class="img-fluid mb-3 modal-product-img" alt="Vitamina C">
+                    <p class="product-price">Precio: L 120,000.00</p>
+                    <p class="product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis placeat dignissimos modi iusto id assumenda, corporis itaque voluptate accusantium laboriosam non veritatis consectetur vero porro quo in possimus illum quisquam?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProducto3" tabindex="-1" aria-labelledby="modalProducto3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProducto3Label">Prado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Prado.png" class="img-fluid mb-3 modal-product-img" alt="Jarabe para la Tos">
+                    <p class="product-price">Precio: L 90.00</p>
+                    <p class="product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore aperiam voluptas atque ad fugit incidunt sunt? Corrupti obcaecati eaque, at, eos veniam temporibus sequi nobis, laudantium alias earum repellendus maiores.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProducto4" tabindex="-1" aria-labelledby="modalProducto4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProducto4Label">Ford Camioneta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Ford Camioneta.png" class="img-fluid mb-3 modal-product-img" alt="Crema Hidratante">
+                    <p class="product-price">Precio: L 150.00</p>
+                    <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sit, sed ipsa omnis consequuntur ullam, corrupti consequatur quibusdam officia esse itaque, excepturi tempore! Beatae repudiandae et eius deserunt tempora. Hic!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProducto5" tabindex="-1" aria-labelledby="modalProducto5Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProducto5Label">ford</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Ford.jpg" class="img-fluid mb-3 modal-product-img" alt="Protector Solar">
+                    <p class="product-price">Precio: L 210.00</p>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error deserunt illum architecto perspiciatis ad non consequatur facere? Tempora voluptatem repudiandae quod hic fugit assumenda, ea distinctio odit necessitatibus voluptate iusto.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProducto6" tabindex="-1" aria-labelledby="modalProducto6Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProducto6Label">Kiv</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/kiv.jpg" class="img-fluid mb-3 modal-product-img" alt="Kit Primeros Auxilios">
+                    <p class="product-price">Precio: L 350.00</p>
+                    <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptas at tempore dolorum natus neque perferendis possimus, eos laborum, earum blanditiis quaerat veniam fugiat quia tenetur architecto tempora. Cupiditate, quas!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="iconos">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-tiktok"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-twitter-x"></i>
+            </div>
+            <p class="mb-0">TODOS LOS DERECHOS RESERVADOS. 2025 © AGENCIA GLOBAL S.A. DE C.V.</p>
+        </div>
+    </footer>
+   <script src="/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
